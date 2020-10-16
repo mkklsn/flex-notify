@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>flex_notify.Domain</RootNamespace>
+    <AssemblyName>flex_notify.Domain</AssemblyName>
+  </PropertyGroup>
+
+</Project>
