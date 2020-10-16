@@ -11,6 +11,8 @@ namespace flex_notify.Application.Common.Interfaces
 
         DbSet<TodoItem> TodoItems { get; set; }
 
+        DbSet<LeaveRequest> LeaveRequests { get; set; }
+
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }
