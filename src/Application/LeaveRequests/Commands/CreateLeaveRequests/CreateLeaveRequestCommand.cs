@@ -39,14 +39,6 @@ namespace flex_notify.Application.LeaveRequests.Commands.CreateLeaveRequests
 
             await _context.SaveChangesAsync(cancellationToken);
 
-            /*
-             * I would prefer to avoid "manually" emit an event here.
-             * But to do that, we would need use CosmosDB instead
-             * CosmosDB has a "CosmosDbTrigger" binding that can be attached to Azure Function
-             * see LeaveRequestFunction.cs
-            */
-            await _eventService.Publish(new object(), EventType.LeaveRequest);
-
             return entity.Id;
         }
     }
